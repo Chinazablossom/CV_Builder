@@ -8,6 +8,8 @@
     <string name="bio">About:</string>
     <string name="back">Back</string>
     <string name="done">Done</string>
+    <string name="SeeMore">See More</string>
+    <string name="SeeLess">See Less</string>
     <string name="editP">Edit Your CV</string>
     <string name="contact">Contact Info: </string>
     <string name="about">I am an experienced and passionate android developer with expertise in Kotlin and understanding of Java as well.\nI thrive on transforming innovative ideas into functional and user-friendly applications.\nI have profound knowledge on API integration, Dependency Injection, Retrofit, git and github, databases, Material design, Navigation, Firebase, WorkManager, and architectural patterns such as MVVM to name a few.\nI\'m Experienced in crafting efficient code, optimizing UI\/UX, and collaborating within agile teams.\nI\'m Constantly exploring new technologies to stay at the forefront of Android development trends.\nLet\'s code the future together\!\😊</string>

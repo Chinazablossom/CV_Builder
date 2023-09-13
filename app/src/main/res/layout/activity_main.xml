@@ -219,12 +219,27 @@
                     android:lineSpacingExtra="4sp"
                     android:paddingStart="16dp"
                     android:paddingEnd="16dp"
+                    android:maxLines="3"
+                    android:ellipsize="end"
                     android:text="@string/about"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Bio" />
 
+
+                <TextView
+                    android:id="@+id/seeMoreTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SeeMore"
+                    android:textColor="@color/blue"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:clickable="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/aboutId"
+                    android:focusable="true" />
 
                 <ImageView
                     android:id="@+id/githubImg"

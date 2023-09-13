@@ -3,6 +3,7 @@ package com.example.cv_builder
 import android.content.Intent
 import android.os.Bundle
 import android.provider.MediaStore
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.cv_builder.databinding.ActivityMainBinding
@@ -25,6 +26,30 @@ class MainActivity : AppCompatActivity() {
         val git = sharedPreferences.getString("USER_GIT", getString(R.string.gituserName))
         val bio = sharedPreferences.getString("USER_BIO", getString(R.string.about))
         window.statusBarColor = ContextCompat.getColor(this, R.color.black)
+        var isExpanded = false
+
+        val lines = viewBinding.aboutId.layout?.lineCount
+        if (lines != null) {
+            if (lines >= 3) {
+                viewBinding.seeMoreTextView.visibility = View.VISIBLE
+            } else {
+                viewBinding.seeMoreTextView.visibility = View.GONE
+            }
+        }
+
+
+        viewBinding.seeMoreTextView.setOnClickListener {
+            isExpanded = !isExpanded
+
+            if (isExpanded) {
+                viewBinding.aboutId.maxLines = Integer.MAX_VALUE
+                viewBinding.seeMoreTextView.text = getString(R.string.SeeLess)
+            } else {
+                viewBinding.aboutId.maxLines = 3
+                viewBinding.seeMoreTextView.text = getString(R.string.SeeMore)
+            }
+        }
+
 
         viewBinding.TxtUserName.text = userName
         viewBinding.TxtNiche.text = role
@@ -36,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         viewBinding.aboutId.text = bio
 
         viewBinding.editCvId.setOnClickListener {
-            startActivity(Intent(this, EditActivity::class.java))
+            startActivity(Intent(this@MainActivity, EditActivity::class.java))
         }
 
         viewBinding.changeImgId.setOnClickListener {
