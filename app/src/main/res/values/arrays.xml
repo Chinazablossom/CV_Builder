@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DeveloperRoles">
+        <item>Android Developer</item>
+        <item>Back-End Developer</item>
+        <item>Blockchain Developer</item>
+        <item>Cloud Developer</item>
+        <item>Data Scientist</item>
+        <item>Database Developer</item>
+        <item>DevOps Engineer</item>
+        <item>Embedded Systems Developer</item>
+        <item>Front-End Developer</item>
+        <item>Full-Stack Developer</item>
+        <item>Game Developer</item>
+        <item>iOS Developer</item>
+        <item>Java Developer</item>
+        <item>JavaScript Developer</item>
+        <item>Machine Learning Engineer</item>
+        <item>Python Developer</item>
+        <item>QA Engineer (Quality Assurance)</item>
+        <item>Security Engineer</item>
+        <item>Software Architect</item>
+        <item>Software Engineer</item>
+        <item>Systems Developer</item>
+        <item>UI/UX Developer</item>
+        <item>Web Developer</item>
+    </string-array>
+
+    <string-array name="locationsArray">
+
+
+        <item>Abia, Nigeria</item>
+        <item>Adamawa, Nigeria</item>
+        <item>Akwa Ibom, Nigeria</item>
+        <item>Anambra, Nigeria</item>
+        <item>Bauchi, Nigeria</item>
+        <item>Bayelsa, Nigeria</item>
+        <item>Benue, Nigeria</item>
+        <item>Borno, Nigeria</item>
+        <item>Cross River, Nigeria</item>
+        <item>Delta, Nigeria</item>
+        <item>Ebonyi, Nigeria</item>
+        <item>Edo, Nigeria</item>
+        <item>Ekiti, Nigeria</item>
+        <item>Enugu, Nigeria</item>
+        <item>Gombe, Nigeria</item>
+        <item>Imo, Nigeria</item>
+        <item>Jigawa, Nigeria</item>
+        <item>Kaduna, Nigeria</item>
+        <item>Kano, Nigeria</item>
+        <item>Katsina, Nigeria</item>
+        <item>Kebbi, Nigeria</item>
+        <item>Kogi, Nigeria</item>
+        <item>Kwara, Nigeria</item>
+        <item>Lagos, Nigeria</item>
+        <item>Nasarawa, Nigeria</item>
+        <item>Niger, Nigeria</item>
+        <item>Ogun, Nigeria</item>
+        <item>Ondo, Nigeria</item>
+        <item>Osun, Nigeria</item>
+        <item>Oyo, Nigeria</item>
+        <item>Plateau, Nigeria</item>
+        <item>Rivers, Nigeria</item>
+        <item>Sokoto, Nigeria</item>
+        <item>Taraba, Nigeria</item>
+        <item>Yobe, Nigeria</item>
+        <item>Zamfara, Nigeria</item>
+    </string-array>
+
+
+    <string-array name="universities">
+        <item>University of Lagos</item>
+        <item>Obafemi Awolowo University</item>
+        <item>Ahmadu Bello University</item>
+        <item>University of Ibadan</item>
+        <item>University of Nigeria, Nsukka</item>
+        <item>Federal University of Technology, Minna</item>
+        <item>Covenant University</item>
+        <item>University of Ilorin</item>
+        <item>Lagos State University</item>
+        <item>University of Benin</item>
+        <item>Federal University of Technology, Akure</item>
+        <item>Abubakar Tafawa Balewa University</item>
+        <item>University of Port Harcourt</item>
+        <item>Bayero University Kano</item>
+        <item>Nnamdi Azikiwe University</item>
+        <item>Federal University of Technology, Owerri</item>
+        <item>Federal University of Petroleum Resources, Effurun</item>
+        <item>Adekunle Ajasin University</item>
+        <item>University of Abuja</item>
+        <item>Federal University of Agriculture, Abeokuta</item>
+        <item>Federal University of Technology, Minna</item>
+        <item>American University of Nigeria</item>
+        <item>University of Calabar</item>
+        <item>Abia State University</item>
+        <item>Babcock University</item>
+        <item>Ladoke Akintola University of Technology</item>
+        <item>Rivers State University</item>
+        <item>Kwara State University</item>
+        <item>Ekiti State University</item>
+        <item>Federal University, Dutsin-Ma</item>
+
+    </string-array>
+
+
+</resources>

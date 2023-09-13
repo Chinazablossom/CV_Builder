@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CV_Builder</string>
+    <string name="userName">Chinaza Blossom</string>
+    <string name="gituserName">ChinazaBlossom</string>
+    <string name="role">Android Developer</string>
+    <string name="location">Lagos, Nigeria</string>
+    <string name="email">chinazablossom7\@gmail.com</string>
+    <string name="bio">About:</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <string name="editP">Edit Your CV</string>
+    <string name="contact">Contact Info: </string>
+    <string name="about">I am an experienced and passionate android developer with expertise in Kotlin and understanding of Java as well.\nI thrive on transforming innovative ideas into functional and user-friendly applications.\nI have profound knowledge on API integration, Dependency Injection, Retrofit, git and github, databases, Material design, Navigation, Firebase, WorkManager, and architectural patterns such as MVVM to name a few.\nI\'m Experienced in crafting efficient code, optimizing UI\/UX, and collaborating within agile teams.\nI\'m Constantly exploring new technologies to stay at the forefront of Android development trends.\nLet\'s code the future together\!\😊</string>
+    <string name="education">Lagos State University,Computer Science</string>
+    <string name="fullNameEditable">Full name</string>
+    <string name="devRoleEditable">Developer role</string>
+    <string name="locationEditable">Location</string>
+    <string name="emailEditable">Enter Email</string>
+    <string name="educationEditable">Education</string>
+    <string name="githubEditable">GitHub Username</string>
+    <string name="slackEditable">Slack Username</string>
+    <string name="BioEditable">About</string>
+
+
+</resources>
