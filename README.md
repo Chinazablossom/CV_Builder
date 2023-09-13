@@ -16,7 +16,11 @@ It provides a user-friendly interface for editing and viewing personal and profe
 - **Real-time Updates**: After making changes to the CV details, the app dynamically updates the content on the home/first page without requiring manual refresh.
 
 - **See More Option**: A "See More" option allows you to handle long bios by revealing the rest of the text when clicked.
+  
+# Demo on Appetizer.io
 
+  https://appetize.io/app/fn4nkmgz42f6evstxpbcuiqbwq?device=pixel7&osVersion=13.0&scale=75
+  
 # Getting Started
 
 ### Follow these instructions to set up and run the CV Builder App on your Android device.
@@ -35,16 +39,13 @@ Real-time Updates: All changes are instantly reflected on the main screen withou
 
 Save CV: To save your changes, click the "Done" button in the edit screen. Your updated CV details will be stored.
 
-# Demo on Appetizer.io
-  https://appetize.io/app/fn4nkmgz42f6evstxpbcuiqbwq?device=pixel7&osVersion=13.0&scale=75
-
-### SDK Requirements
+# SDK Requirements
 
 ⊚ Minimum SDK Requirement --- API 24 Android 7.0 (Nougat)
 
 ⊚ Target SDK Requirement –-- API 34 Android API 34
 
-### Installation
+# Installation
 
 1. Clone the repository:
 
