@@ -1,15 +1,21 @@
 package com.example.cv_builder
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.cv_builder.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var viewBinding: ActivityMainBinding
+
+    companion object {
+        private const val REQUEST_CODE = 1
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +31,14 @@ class MainActivity : AppCompatActivity() {
         val slack = sharedPreferences.getString("USER_SLACK", getString(R.string.userName))
         val git = sharedPreferences.getString("USER_GIT", getString(R.string.gituserName))
         val bio = sharedPreferences.getString("USER_BIO", getString(R.string.about))
+
+        val imageUri = sharedPreferences.getString("USER_IMAGE_URI", null)
+        if (!imageUri.isNullOrEmpty()) {
+            viewBinding.ImgViewId.setImageURI(Uri.parse(imageUri))
+        }
+
+
+
         window.statusBarColor = ContextCompat.getColor(this, R.color.black)
         var isExpanded = false
 
@@ -36,8 +50,6 @@ class MainActivity : AppCompatActivity() {
                 viewBinding.seeMoreTextView.visibility = View.GONE
             }
         }
-
-
         viewBinding.seeMoreTextView.setOnClickListener {
             isExpanded = !isExpanded
 
@@ -51,6 +63,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
         viewBinding.TxtUserName.text = userName
         viewBinding.TxtNiche.text = role
         viewBinding.LocationTxt.text = location
@@ -62,6 +75,7 @@ class MainActivity : AppCompatActivity() {
 
         viewBinding.editCvId.setOnClickListener {
             startActivity(Intent(this@MainActivity, EditActivity::class.java))
+
         }
 
         viewBinding.changeImgId.setOnClickListener {
@@ -77,12 +91,22 @@ class MainActivity : AppCompatActivity() {
         finishAffinity()
     }
 
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (resultCode == RESULT_OK && requestCode == 1) {
-            val uri = data?.data
-            viewBinding.ImgViewId.setImageURI(uri)
+        if (resultCode == RESULT_OK) {
+            if (requestCode == REQUEST_CODE) {
+                val updatedInfo = data?.getStringExtra("UPDATED_INFO")
+                val uri = data?.data
+                if (uri != null) {
+                    viewBinding.ImgViewId.setImageURI(uri)
+                    val sharedPreferences = getSharedPreferences("CV_BUILDER", MODE_PRIVATE)
+                    val editor = sharedPreferences.edit()
+                    editor.putString("USER_IMAGE_URI", uri.toString())
+                    editor.apply()
+                }
+            }
         }
     }
 
