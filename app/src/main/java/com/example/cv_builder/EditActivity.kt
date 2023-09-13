@@ -48,7 +48,7 @@ class EditActivity : AppCompatActivity() {
                 putString("USER_BIO", bio)
                 apply()
             }
-            finish()
+
             startActivity(Intent(this, MainActivity::class.java))
         }
 
@@ -57,7 +57,7 @@ class EditActivity : AppCompatActivity() {
         val slackUserName = sharedPreferences.getString("USER_SLACK", getString(R.string.userName))
         val gitHubUsername =
             sharedPreferences.getString("USER_GIT", getString(R.string.gituserName))
-        val bio = sharedPreferences.getString("USER_BIO", getString(R.string.bio))
+        val bio = sharedPreferences.getString("USER_BIO", getString(R.string.about))
         viewBinding.fullNameIdEditText.setText(userName)
         viewBinding.emailIdEditText.setText(email)
         viewBinding.slackIdEditText.setText(slackUserName)
