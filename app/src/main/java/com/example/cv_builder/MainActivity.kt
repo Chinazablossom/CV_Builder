@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val school = sharedPreferences.getString("USER_EDU", getString(R.string.education))
         val slack = sharedPreferences.getString("USER_SLACK", getString(R.string.userName))
         val git = sharedPreferences.getString("USER_GIT", getString(R.string.gituserName))
-        val bio = sharedPreferences.getString("USER_BIO", getString(R.string.bio))
+        val bio = sharedPreferences.getString("USER_BIO", getString(R.string.about))
         window.statusBarColor = ContextCompat.getColor(this, R.color.black)
 
         viewBinding.TxtUserName.text = userName
