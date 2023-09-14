@@ -19,7 +19,7 @@ It provides a user-friendly interface for editing and viewing personal and profe
   
 # Demo on Appetizer.io
 
-  https://appetize.io/app/fn4nkmgz42f6evstxpbcuiqbwq?device=pixel7&osVersion=13.0&scale=75
+ [CV_Builder](https://appetize.io/app/fn4nkmgz42f6evstxpbcuiqbwq?device=pixel7&osVersion=13.0&scale=75)
   
 # Getting Started
 
